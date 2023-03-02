@@ -9,11 +9,19 @@
 <body>
     <script>
 
-        function addNumbers(){ }
-
-        let finalResult = addNumbers();
-        console.log(`The sum was >10: ${finalResult}`);
-
+        function addNumbers(a, b, c){
+        var d = a + b + c;
+        let finalResult;
+        if (d > 10){
+            result = true;
+        }
+        else
+         {result = false;}
+        return [result, d];
+    }
+        const [first, second] = addNumbers(2, 4, 4)
+        console.log(`The sum of parameters a, b, c is: ${second}`);
+        console.log(`The sum was >10: ${first}`);
     </script>
 </body>
 </html>
